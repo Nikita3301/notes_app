@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="note_hint">Type here …</string>
+    <string name="note_check_box">Check box</string>
+    <string name="save_note_description">Successfully saved!</string>
+    <string name="checkbox_list">CheckBox List:</string>
+    <string name="new_image">new image</string>
+</resources>

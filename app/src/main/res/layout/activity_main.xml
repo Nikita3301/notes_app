@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/new_image"
+                    android:paddingVertical="20dp"
+                    android:src="@drawable/cute_fox_sticker">
+                </ImageView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/note_hint"
+                    android:inputType="none"
+                    android:minHeight="48dp"
+                    android:paddingVertical="10dp"
+                    android:importantForAutofill="no">
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="5dp"
+                    android:text="@string/checkbox_list"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size" />
+
+                <LinearLayout
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="5dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="20dp"
+        android:backgroundTint="#B388FF"
+        app:cornerRadius="@dimen/button_radius"
+        app:icon="@drawable/done_icon"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:contentDescription="@string/save_note_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@color/white">-->
+
+    <!--            <ImageButton-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:contentDescription="@string/safe_note"-->
+    <!--                android:src="@drawable/done_icon"-->
+    <!--                android:backgroundTint="@color/white"-->
+    <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <ImageButton-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:contentDescription="@string/safe_note"-->
+    <!--                android:src="@drawable/qr_code_icon"-->
+    <!--                android:backgroundTint="@color/white"-->
+    <!--                app:layout_constraintRight_toLeftOf="@id/button3"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <ImageButton-->
+    <!--                android:id="@+id/button3"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:contentDescription="@string/safe_note"-->
+    <!--                android:src="@drawable/pin_icon"-->
+    <!--                android:backgroundTint="@color/white"-->
+    <!--                app:layout_constraintRight_toLeftOf="@id/button4"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <ImageButton-->
+    <!--                android:id="@+id/button4"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:contentDescription="@string/safe_note"-->
+    <!--                android:src="@drawable/more_icon"-->
+    <!--                android:backgroundTint="@color/white"-->
+    <!--                app:layout_constraintRight_toRightOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        <TextView
+            android:id="@+id/detail"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_note_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="20dp" />
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="#FF9100"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent">-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/bottom_button1"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            android:backgroundTint="#FF9100"-->
+    <!--            android:contentDescription="@string/safe_note"-->
+    <!--            android:rotation="220"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:src="@drawable/attach_file_icon"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/bottom_button2"-->
+    <!--            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            app:cornerRadius="@dimen/button_radius"-->
+    <!--            app:strokeWidth="2dp"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:backgroundTint="@color/teal_200"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toRightOf="@id/bottom_button1"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/bottom_button3"-->
+    <!--            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            app:cornerRadius="@dimen/button_radius"-->
+    <!--            app:strokeWidth="2dp"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:layout_marginVertical="10dp"-->
+    <!--            android:backgroundTint="@color/purple_200"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toRightOf="@id/bottom_button2"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/bottom_button4"-->
+    <!--            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            app:cornerRadius="@dimen/button_radius"-->
+    <!--            app:strokeWidth="2dp"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:backgroundTint="@color/purple_500"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toRightOf="@id/bottom_button3"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/bottom_button5"-->
+    <!--            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            app:cornerRadius="@dimen/button_radius"-->
+    <!--            app:strokeWidth="2dp"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toRightOf="@id/bottom_button4"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/bottom_button6"-->
+    <!--            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            app:cornerRadius="@dimen/button_radius"-->
+    <!--            app:strokeWidth="2dp"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:backgroundTint="#FFEA00"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toRightOf="@id/bottom_button5"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/bottom_button1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="addd"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent">-->
+    <!--        </com.google.android.material.button.MaterialButton>-->
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/bottom_button2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="addd"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toRightOf="@id/bottom_button1">-->
+    <!--        </com.google.android.material.button.MaterialButton>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
