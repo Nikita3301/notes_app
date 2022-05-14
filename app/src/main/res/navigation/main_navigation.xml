@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/newNoteFragment">
+
+    <fragment
+        android:id="@+id/newNoteFragment"
+        android:name="com.example.pmd2.NewNoteFragment"
+        android:label="fragment_new_notes"
+        tools:layout="@layout/fragment_new_notes" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.pmd2.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_newNoteFragment"
+            app:destination="@id/newNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.pmd2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_profileFragment_to_registrationActivity"
+            app:destination="@id/registrationActivity" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileEditActivity"
+            app:destination="@id/profileEditActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.pmd2.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.pmd2.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registrationActivity"
+        android:name="com.example.pmd2.RegistrationActivity"
+        android:label="activity_registration"
+        tools:layout="@layout/activity_registration" />
+    <activity
+        android:id="@+id/profileEditActivity"
+        android:name="com.example.pmd2.ProfileEditActivity"
+        android:label="activity_profile_edit"
+        tools:layout="@layout/activity_profile_edit" />
+</navigation>

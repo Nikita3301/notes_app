@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item1_task"
+        android:icon="@drawable/qr_code_icon"
+        android:title="qr-code"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item2_task"
+        android:icon="@drawable/pin_icon"
+        android:title="pin"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item3_task"
+        android:icon="@drawable/more_icon"
+        android:title="more"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/item4_task"
+                android:title="Change note background"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/item5_task"
+                android:title="Change font"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/item6_task"
+                android:title="Change font color"
+                app:showAsAction="never" />
+
+        </menu>
+
+    </item>
+</menu>
