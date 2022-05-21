@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E2E8"
+    tools:context=".ProfileEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/profile_edit_img_frame"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_edit_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/circle"
+            app:srcCompat="@drawable/account_icon"
+            app:strokeWidth="4dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLoadPicture"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/save_note_description"
+            android:backgroundTint="@color/white"
+            app:cornerRadius="@dimen/button_radius"
+            app:icon="@drawable/edit_icon"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonLoadPicture"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:backgroundTint="@color/light_purple"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                />-->
+        <!--        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--            android:id="@+id/profile_edit_img"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/account_icon"-->
+<!--            app:civ_border_color="@color/light_purple"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:civ_shadow="true"-->
+<!--            app:civ_shadow_color="@color/purple_200" />-->
+    </RelativeLayout>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonLoadPicture"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text=""-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:backgroundTint="@color/light_purple"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/profile_edit_img_frame"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/username_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="25dp"-->
+<!--        android:textColor="@color/light_purple"-->
+<!--        android:text="Username"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/card_view"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/buttonLoadPicture" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Username"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_edit_img_frame" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textStyle="normal"
+            android:maxLines="1"
+            app:backgroundTint="@color/purple_700"
+            android:textColorHighlight="@color/text_highlight"
+            android:textCursorDrawable="@drawable/color_cursor"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_text_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Email"
+        app:startIconDrawable="@drawable/email_icon"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_text_field" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:textColor="@color/text_black"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:focusable="false"
+            android:cursorVisible="false"
+            app:backgroundTint="@color/purple_700"
+            android:textColorHighlight="@color/text_highlight"
+            android:textCursorDrawable="@drawable/color_cursor"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/email_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="25dp"-->
+<!--        android:textColor="@color/light_purple"-->
+<!--        android:paddingTop="20dp"-->
+<!--        android:text="Email"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/card_view" />-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/card_view1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardCornerRadius="6dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/email_text">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/profile_edit_email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="bottom"-->
+<!--            android:hint="Enter email"-->
+<!--            android:text=""-->
+<!--            android:enabled="false"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:textColor="@color/text_black"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:textStyle="normal"-->
+<!--            app:backgroundTint="@color/purple_700"-->
+<!--            android:textColorHighlight="@color/text_highlight"-->
+<!--            android:textCursorDrawable="@drawable/color_cursor"/>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_profile_button"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/light_purple"
+        android:contentDescription="@string/save_note_description"
+        app:cornerRadius="@dimen/button_radius"
+        app:icon="@drawable/done_icon"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/pass_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="25dp"-->
+<!--        android:textColor="@color/light_purple"-->
+<!--        android:paddingTop="20dp"-->
+<!--        android:text="Password"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/card_view1" />-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/card_view3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardCornerRadius="6dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/pass_text">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/profile_edit_pass"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="bottom"-->
+<!--            android:hint="Enter password"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:enabled="false"-->
+<!--            android:inputType="text"-->
+<!--            android:textColor="@color/text_black"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:textStyle="normal"-->
+<!--            app:backgroundTint="@color/purple_700"-->
+<!--            android:textColorHighlight="@color/text_highlight"-->
+<!--            android:textCursorDrawable="@drawable/color_cursor"/>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <!--        <Button-->
+    <!--            android:id="@+id/logout"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="24dp"-->
+    <!--            android:text="Log out"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

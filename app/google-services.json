@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "286061541669",
+    "firebase_url": "https://pmdnotes-default-rtdb.firebaseio.com",
+    "project_id": "pmdnotes",
+    "storage_bucket": "pmdnotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286061541669:android:50c5db5d7730707d5202cc",
+        "android_client_info": {
+          "package_name": "com.example.pmd2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286061541669-h8hmfmahn9pe3af27h8e6vp658jcqmj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pmd2",
+            "certificate_hash": "e748a9ae348de92542164688c51795d1aadf2225"
+          }
+        },
+        {
+          "client_id": "286061541669-2qngn164b0mbc7jel6sc9tn6mk2sieta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh61E_o6aTMi-Du9ZQKnevcLLGk4Vvtr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286061541669-2qngn164b0mbc7jel6sc9tn6mk2sieta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

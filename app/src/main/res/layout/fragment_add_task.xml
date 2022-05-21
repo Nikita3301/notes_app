@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_task_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_task_title_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="3dp"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_task_description_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="3"
+                    android:maxLines="7"
+                    android:scrollbars="vertical"
+                    android:gravity="top|start"
+                    android:singleLine="false"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/add_task_action_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginVertical="24dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="22dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="CANCEL"
+                android:drawableStart="@drawable/exit_icon_white"
+                app:layout_constraintRight_toLeftOf="@id/add_task_action_ok"
+                app:layout_constraintTop_toBottomOf="@id/username_text_input_layout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/add_task_action_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginVertical="24dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="22dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="OK"
+                android:drawableEnd="@drawable/done_icon"
+                app:layout_constraintLeft_toRightOf="@id/add_task_action_cancel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/username_text_input_layout"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
