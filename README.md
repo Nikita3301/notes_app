@@ -20,6 +20,8 @@
 - **Database**: Firebase Firestore
 - **Language**: Kotlin 
 
+---
+
 ### 👻 Creators:
 - [Fibiskus](https://github.com/Fibiskus)
 - [RomanNadia](https://github.com/RomanNadia)
