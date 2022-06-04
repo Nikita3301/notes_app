@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1091179049746",
+    "project_id": "foxnotes-3301",
+    "storage_bucket": "foxnotes-3301.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091179049746:android:1ffe3ed55e8539ccd7b9cb",
+        "android_client_info": {
+          "package_name": "com.foxnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091179049746-n1kbsdop8eu6gesc7b3hv2tbgj8l4flu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.foxnotes",
+            "certificate_hash": "e748a9ae348de92542164688c51795d1aadf2225"
+          }
+        },
+        {
+          "client_id": "1091179049746-buha622qnrlqn49ir6e7helb15ta7uhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAeZnq01MfMzC8NK6BdqAzzSUxI21ssjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091179049746-buha622qnrlqn49ir6e7helb15ta7uhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4445" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/account_icon.xml" value="0.4105" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/add_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/back_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/bottom_sheet_corners_background.xml" value="0.201" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/color_cursor.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/date_icon.xml" value="0.437" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/delete_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/done_icon.xml" value="0.212" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/drawable_round_bottom_sheet.xml" value="0.2705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/edit_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/email_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/exit_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/exit_icon_white.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon2.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon3.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon4.xml" value="0.5065" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon_black.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon_logo.xml" value="0.288" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon_logo_white.xml" value="0.288" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_icon_white.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_text_left_pointer.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_text_poiner.xml" value="0.5065" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/fox_text_right_pointer.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/friends_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/google_icon.xml" value="0.136" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/ic_fox__4_.xml" value="0.4415" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/ic_launcher_background.xml" value="0.4445" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.4415" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/launcher_icon.xml" value="0.4415" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/menu_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/more_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/notes_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/one_raw_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/password_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/pin_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/qr_code_icon.xml" value="0.41" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/repeat_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/save_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/search_icon.xml" value="0.328" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/shape.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/task_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/text_view_border.xml" value="0.5065" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/drawable/two_columns_icon.xml" value="0.2685" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/activity_first_enter.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/activity_main.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/activity_profile_edit.xml" value="0.3527777777777778" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/activity_registration.xml" value="0.3527777777777778" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/first_enter_page.xml" value="0.49166666666666664" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_add_note.xml" value="0.4239583333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_add_task.xml" value="0.30104166666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_modify_note.xml" value="0.39166666666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_modify_task.xml" value="0.4390625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_new_notes.xml" value="0.4388888888888889" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_new_task.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_notes.xml" value="0.3723958333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_profile.xml" value="0.4111111111111111" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/fragment_tasks.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/nav_header.xml" value="0.4840764331210191" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/new_note_toolbar.xml" value="0.553125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/notes_bottom_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/notes_item.xml" value="0.4197916666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/password_reset.xml" value="0.3398148148148148" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/raw_item.xml" value="0.40208333333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/switch_layout.xml" value="0.3165829145728643" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/tasks_item.xml" value="0.2962962962962963" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/text_view_border.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/layout/toolbar.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/drawer_nav_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/edit_profile.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/login_menu.xml" value="0.3723958333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/main_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/new_note_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/new_task_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/notes_menu.xml" value="0.3574074074074074" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/menu/tasks_menu.xml" value="0.3255208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/FoxNotes/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.4415" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/account_icon.xml" value="0.149" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/add_icon.xml" value="0.301" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/circle.xml" value="0.165" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/color_cursor.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/done_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/edit_icon.xml" value="0.1475" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/exit_icon.xml" value="0.149" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/exit_icon_white.xml" value="0.1145" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/fox_icon.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/fox_icon3.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/fox_icon4.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/fox_icon_black.xml" value="0.165" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/fox_icon_white.xml" value="0.165" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/friends_icon.xml" value="0.149" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/ic_fox__3_.xml" value="0.1925" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/ic_profile.xml" value="0.125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/menu_icon.xml" value="0.118" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/more_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/notes_icon.xml" value="0.102" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/pin_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/qr_code_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/round_fox_img_white.xml" value="0.165" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/roundcorner.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/drawable/task_icon.xml" value="0.149" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_chat.xml" value="0.3169601482854495" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_login.xml" value="0.28815733219324496" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_main.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_main2.xml" value="0.37019839594765724" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_profile.xml" value="0.3169601482854495" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_profile_edit.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_registration.xml" value="0.33262077811030355" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/activity_tasks.xml" value="0.3345690454124189" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_custom_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_home.xml" value="0.17145505097312327" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_item_list_dialog_list_dialog.xml" value="0.3290083410565338" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_item_list_dialog_list_dialog_item.xml" value="0.3290083410565338" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_login.xml" value="0.35648148148148145" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_new_notes.xml" value="0.32962804617357844" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_new_task.xml" value="0.20610687022900764" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_notes.xml" value="0.24283882000855067" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_notes_list.xml" value="0.362962962962963" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_notes_list_list.xml" value="0.5268518518518519" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_profile.xml" value="0.2902949978623343" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_registration.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/fragment_tasks.xml" value="0.2552372808892689" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/nav_header.xml" value="0.24497648567764002" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/notes_bottom_menu.xml" value="0.3026934587430526" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/raw_item.xml" value="0.3343182777543267" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/layout/toolbar.xml" value="0.20111214087117701" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/menu/drawer_nav_menu.xml" value="0.2552372808892689" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/menu/edit_profile.xml" value="0.13809320222317228" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/menu/login_menu.xml" value="0.32503165892781766" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/menu/main_menu.xml" value="0.3076923076923077" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/menu/new_note_menu.xml" value="0.24283882000855067" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PMD2/app/src/main/res/menu/notes_menu.xml" value="0.2567191844300278" />
+        <entry key="..\:/Users/Admin/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/preference_list_fragment.xml" value="0.2573749465583583" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

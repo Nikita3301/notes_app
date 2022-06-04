@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainActivity">
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.foxnotes.notes.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_modifyNoteFragment"
+            app:destination="@id/modifyNoteFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.foxnotes.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_profileFragment_to_registrationActivity"
+            app:destination="@id/registrationActivity" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileEditActivity"
+            app:destination="@id/profileEditActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.foxnotes.tasks.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_tasksFragment_to_modifyTaskFragment"
+            app:destination="@id/modifyTaskFragment" />
+        <action
+            android:id="@+id/action_tasksFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.foxnotes.profile.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registrationActivity"
+        android:name="com.foxnotes.profile.RegistrationActivity"
+        android:label="activity_registration"
+        tools:layout="@layout/activity_registration" />
+    <activity
+        android:id="@+id/profileEditActivity"
+        android:name="com.foxnotes.profile.ProfileEditActivity"
+        android:label="activity_profile_edit"
+        tools:layout="@layout/activity_profile_edit" />
+    <dialog
+        android:id="@+id/modifyTaskFragment"
+        android:name="com.foxnotes.tasks.ModifyTaskFragment"
+        android:label="ModifyTaskFragment" />
+    <dialog
+        android:id="@+id/addNoteFragment"
+        android:name="com.foxnotes.notes.AddNoteFragment"
+        android:label="AddNoteFragment" />
+    <dialog
+        android:id="@+id/addTaskFragment"
+        android:name="com.foxnotes.tasks.AddTaskFragment"
+        android:label="AddTaskFragment" />
+    <dialog
+        android:id="@+id/modifyNoteFragment"
+        android:name="com.foxnotes.notes.ModifyNoteFragment"
+        android:label="ModifyNoteFragment" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.foxnotes.MainActivity"
+        android:label="MainActivity" />
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_width">60dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_radius">60dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="checkbox_height">40dp</dimen>
+    <dimen name="image_height">260dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>
