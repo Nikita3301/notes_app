@@ -47,13 +47,11 @@ class TasksFragment : Fragment() {
         setToolbar()
         adapterInitialization()
 
-
         binding.newTaskButton.setOnClickListener {
             Log.d("tasks", "new task")
             val dialog = AddTaskFragment()
             dialog.show(parentFragmentManager, "new task dialog")
         }
-
 
         modifyTask()
         deleteTask()
@@ -119,8 +117,6 @@ class TasksFragment : Fragment() {
 
                 }
             }
-
-
         })
     }
 

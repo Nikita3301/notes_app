@@ -30,18 +30,13 @@ class RegistrationActivity : AppCompatActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         auth = Firebase.auth
 
-
-       checkInputFields()
-
+        checkInputFields()
 
         binding.regButton.setOnClickListener {
             registerUser()
         }
-
         binding.gotoLoginPage.setOnClickListener {
             openLoginPage()
         }
@@ -131,21 +126,6 @@ class RegistrationActivity : AppCompatActivity() {
         }
     }
 
-    private fun openProfile() {
-        val intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("activity", "profile")
-        startActivity(intent)
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
-        finish()
-    }
-
-    private fun openLoginPage(){
-        val intent = Intent(this, LoginActivity::class.java)
-        intent.putExtra("activity", "login")
-        startActivity(intent)
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
-        finish()
-    }
 
     private fun sendEmailVerification() {
         val user = Firebase.auth.currentUser
@@ -167,6 +147,22 @@ class RegistrationActivity : AppCompatActivity() {
         intent.putExtra("activity", "main")
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
         startActivity(intent)
+        finish()
+    }
+
+    private fun openProfile() {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("activity", "profile")
+        startActivity(intent)
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
+        finish()
+    }
+
+    private fun openLoginPage(){
+        val intent = Intent(this, LoginActivity::class.java)
+        intent.putExtra("activity", "login")
+        startActivity(intent)
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
         finish()
     }
 

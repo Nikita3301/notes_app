@@ -97,21 +97,6 @@ class ProfileFragment : Fragment() {
 
     }
 
-    private fun logout(){
-        MaterialAlertDialogBuilder(requireContext(), R.style.MaterialAlertDialog_sign_out)
-            .setTitle("Are you really want to sign out?")
-            .setNeutralButton("No") { dialog, _ ->
-                dialog.dismiss()
-            }
-            .setPositiveButton("Yes") { _, _ ->
-                signOut()
-                updateUI(user)
-                val intent = Intent(activity, FirstEnterActivity::class.java)
-                intent.putExtra("activity", "firstEnter")
-                startActivity(intent)
-            }.show()
-    }
-
     private fun sendVerification(){
         auth.addAuthStateListener {
             user!!.sendEmailVerification().addOnCompleteListener { task ->
@@ -150,7 +135,6 @@ class ProfileFragment : Fragment() {
         (activity as MainActivity?)!!.navItemChecker()
     }
 
-
     private fun getUserProfile() {
         val user = auth.currentUser
         user?.let {
@@ -174,6 +158,24 @@ class ProfileFragment : Fragment() {
         }
     }
 
+    private fun logout(){
+        MaterialAlertDialogBuilder(requireContext(), R.style.MaterialAlertDialog_sign_out)
+            .setTitle("Are you really want to sign out?")
+            .setNeutralButton("No") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .setPositiveButton("Yes") { _, _ ->
+                signOut()
+                updateUI(user)
+                val intent = Intent(activity, FirstEnterActivity::class.java)
+                intent.putExtra("activity", "firstEnter")
+                startActivity(intent)
+            }.show()
+    }
+
+    private fun signOut() {
+        auth.signOut()
+    }
 
     private fun isOnline(context: Context): Boolean {
         val connectivityManager =
@@ -198,12 +200,9 @@ class ProfileFragment : Fragment() {
         }
         return false
     }
-    private fun signOut() {
-        auth.signOut()
-    }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (user?.isEmailVerified == true){
+        if (user?.isEmailVerified == true || user?.isAnonymous == true){
             when (item.itemId) {
                 R.id.edit_profile_menu_icon -> {
                     if (isOnline(requireContext())){
@@ -214,7 +213,7 @@ class ProfileFragment : Fragment() {
                             R.anim.slide_out_left
                         )
                     }else{
-                        MaterialAlertDialogBuilder(requireContext())
+                        MaterialAlertDialogBuilder(requireContext(),R.style.MaterialAlertDialog_offline)
                             .setTitle("To edit a profile you must to be online")
                             .setPositiveButton("OK") { dialog, _ ->
                                 dialog.dismiss()
@@ -223,8 +222,12 @@ class ProfileFragment : Fragment() {
 
                 }
             }
-        }else{
-            Toast.makeText(activity, "Email not verified", Toast.LENGTH_SHORT).show()
+        } else{
+            MaterialAlertDialogBuilder(requireContext(),R.style.MaterialAlertDialog_offline)
+                .setTitle("Email not verified")
+                .setPositiveButton("OK") { dialog, _ ->
+                    dialog.dismiss()
+                }.show()
         }
 
         return super.onOptionsItemSelected(item)

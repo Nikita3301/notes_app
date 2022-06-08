@@ -111,29 +111,6 @@ class ProfileEditActivity : AppCompatActivity() {
         }
     }
 
-    private fun isOnline(context: Context): Boolean {
-        val connectivityManager =
-            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        val capabilities =
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)
-            } else {
-                TODO("VERSION.SDK_INT < M")
-            }
-        if (capabilities != null) {
-            if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
-                Log.i("Internet", "NetworkCapabilities.TRANSPORT_CELLULAR")
-                return true
-            } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)) {
-                Log.i("Internet", "NetworkCapabilities.TRANSPORT_WIFI")
-                return true
-            } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)) {
-                Log.i("Internet", "NetworkCapabilities.TRANSPORT_ETHERNET")
-                return true
-            }
-        }
-        return false
-    }
 
     private fun updateProfile() {
         if (binding.profileEditUsername.text.toString().isEmpty()) {
@@ -156,22 +133,6 @@ class ProfileEditActivity : AppCompatActivity() {
                 }
         }
     }
-
-
-    private fun openProfile() {
-        val intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("activity", "profile")
-        startActivity(intent)
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
-        finish()
-    }
-
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        openProfile()
-    }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -214,146 +175,45 @@ class ProfileEditActivity : AppCompatActivity() {
         }
     }
 
-
-//    private val getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult())
-//    { result: ActivityResult ->
-//        if (result.resultCode == PICK_IMAGE_CODE){
-//            val uploadTask = storageReference.putFile(result.data!!.data!!)
-//            uploadTask.continueWithTask{
-//                    task ->
-//                if (!task.isSuccessful){
-//                    Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
-//                }
-//                storageReference.downloadUrl
-//            }.addOnCompleteListener { task ->
-//                if (task.isSuccessful){
-//                    val downloadUri = task.result
-//                    clicked = true
-//                    url = downloadUri!!.toString().substring(0, downloadUri.toString().indexOf("&token"))
-//                    Log.d("link", url)
-//                    Picasso.with(this).load(url).into(binding.profileEditImg)
-//                }
-//            }
-//        }
-//    }
-
-//    fun uploadImage(context: Context, imageFileUri: Uri) {
-//        mProgressDialog = ProgressDialog(context)
-//        mProgressDialog.setMessage("Please wait, image being upload")
-//        mProgressDialog.show()
-//        val date = Date()
-//        val uploadTask = mStorageRef.child("posts/${date}.png").putFile(imageFileUri)
-//        uploadTask.addOnSuccessListener {
-//            Log.e("Frebase", "Image Upload success")
-//            mProgressDialog.dismiss()
-//            val uploadedURL = mStorageRef.child("posts/${date}.png").downloadUrl
-//            Log.e("Firebase", "Uploaded $uploadedURL")
-//        }.addOnFailureListener {
-//            Log.e("Frebase", "Image Upload fail")
-//            mProgressDialog.dismiss()
-//        }
-//    }
+    private fun openProfile() {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("activity", "profile")
+        startActivity(intent)
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
+        finish()
+    }
 
 
-//    private fun selectImage() {
-//        val intent = Intent()
-//        intent.type = "image/*"
-//        intent.action = Intent.ACTION_GET_CONTENT
-//        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST)
-//    }
-//
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        super.onActivityResult(requestCode, resultCode, data)
-//        if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK) {
-//            if(data == null || data.data == null){
-//                return
-//            }
-//
-//            filePath = data.data
-//            try {
-//                val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, filePath)
-//                imagePreview.setImageBitmap(bitmap)
-//            } catch (e: IOException) {
-//                e.printStackTrace()
-//            }
-//        }
-//    }
-//
-//    private fun uploadImage(){
-//        if(filePath != null){
-//            val ref = storageReference?.child("profileImages/" + UUID.randomUUID().toString())
-//            val uploadTask = ref?.putFile(filePath!!)
-//
-//        }else{
-//            Toast.makeText(this, "Please Upload an Image", Toast.LENGTH_SHORT).show()
-//        }
-//    }
-
-//    private fun uploadImage() {
-//        val progressDialog =  ProgressDialog(this)
-//        progressDialog.setMessage("Uploading File ...")
-//        progressDialog.setCancelable(false)
-//        progressDialog.show()
-//        val formatter= SimpleDateFormat( "yyyy_MM_dd_HH_mm_5s", Locale.getDefault())
-//        val now =Date()
-//        val fileName=formatter.format(now)
-//        val storageReference = FirebaseStorage.getInstance().getReference("images/$fileName")
-//        storageReference.putFile(ImageUri).
-//        addOnSuccessListener{
-//            binding.profileEditImg.setImageURI(null)
-//            Toast.makeText( this@ProfileEditActivity, "Successfuly uploaded", Toast.LENGTH_SHORT).show()
-//            Log.d("img", "succ")
-//            if (progressDialog.isShowing) progressDialog.dismiss()
-//        }. addOnFailureListener{
-//            if (progressDialog.isShowing) progressDialog.dismiss()
-//            Log.d("img", "fail")
-//            Toast.makeText( this@ProfileEditActivity, "Failed", Toast.LENGTH_SHORT).show()
-//        }
-//    }
-
-//
-//    private fun selectImage() {
-//        val intent = Intent()
-//        intent.type = "image/"
-//        intent.action = Intent.ACTION_GET_CONTENT
-//        startActivityForResult(intent, 100)
-//
-//
-//    }
-
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        super.onActivityResult(requestCode, resultCode, data)
-//        uploadImage()
-//        if (requestCode == 100 && resultCode == RESULT_OK){
-//            ImageUri = data?.data!!
-//            binding.profileEditImg.setImageURI(ImageUri)
-//        }
-//    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        openProfile()
+    }
 
 
-//    fun getUsers(){
-//
-//        val uid = user?.uid
-//        if (uid != null) {
-//            fireStore.collection("users").document(uid)
-//                .get()
-//                .addOnSuccessListener {
-//
-//    //                    Log.d("user_pr", it.data.toString())
-//
-//    //                    Toast.makeText(
-//    //                        activity,
-//    //                        "Your first name is ${it.data?.get("username")}  and last name is ${
-//    //                            it.data?.get("photo")
-//    //                        }",
-//    //                        Toast.LENGTH_SHORT
-//    //                    ).show()
-//                }
-//                .addOnFailureListener {
-//                    it.printStackTrace()
-//                    Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
-//                }
-//        }
-//    }
+
+
+    private fun isOnline(context: Context): Boolean {
+        val connectivityManager =
+            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val capabilities =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)
+            } else {
+                TODO("VERSION.SDK_INT < M")
+            }
+        if (capabilities != null) {
+            if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+                Log.i("Internet", "NetworkCapabilities.TRANSPORT_CELLULAR")
+                return true
+            } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)) {
+                Log.i("Internet", "NetworkCapabilities.TRANSPORT_WIFI")
+                return true
+            } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)) {
+                Log.i("Internet", "NetworkCapabilities.TRANSPORT_ETHERNET")
+                return true
+            }
+        }
+        return false
+    }
 
 }

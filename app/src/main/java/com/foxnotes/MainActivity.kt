@@ -156,7 +156,6 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
         fragmentTransaction.replace(R.id.frameLayout, fragment)
         fragmentTransaction.commit()
-
     }
 
     private fun replaceActivity(activity: AppCompatActivity) {

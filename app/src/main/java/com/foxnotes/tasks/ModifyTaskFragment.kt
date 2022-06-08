@@ -50,10 +50,8 @@ class ModifyTaskFragment(
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentModifyTaskBinding.bind(view)
 
-
         getTaskData()
         checkEmptyTitle()
-
 
         binding.modifyTaskActionOk.setOnClickListener {
             modifyTask()

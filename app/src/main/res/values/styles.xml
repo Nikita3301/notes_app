@@ -39,6 +39,13 @@
         <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Neutral</item>
     </style>
 
+    <style name="MaterialAlertDialog_offline" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitlePanelStyle">@style/Title.Panel.Center</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/Message.Center</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MyTitle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Send</item>
+    </style>
+
 
     <style name="MaterialAlertDialog_reset_pass" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="materialAlertDialogTitlePanelStyle">@style/Title.Panel.Center</item>
